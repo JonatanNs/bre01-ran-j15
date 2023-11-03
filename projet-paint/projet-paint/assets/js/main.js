@@ -32,14 +32,12 @@ window.addEventListener("DOMContentLoaded", function(){
     loadPalette(["#22f6f3", "#3daf7e", "#ffffff", "#ec8236", "#a9a7ee", "#ecc606", "#f783f2", "#e89e80"]);
 
    // le code de l'étape 2 se passe ici
-    let div = document.querySelectorAll("body > header div"); 
-    
-    for(let i = 0; i < div.length ; i++){
-    div[i].addEventListener("click", function selectColor(){
-            return event;
-});
+     
+    let div = document.querySelectorAll("body > header div");
+    for(let o = 0; o < div.length ; o++){
+        div[o].addEventListener("click", selectColor(event));
         
-}
+ }
 
  // le code de l'étape 3 se passe ici
 });
